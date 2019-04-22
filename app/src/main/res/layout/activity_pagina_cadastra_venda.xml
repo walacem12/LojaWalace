@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".PaginaCadastraVenda">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de venda"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="80px"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:textSize="80px" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:text="Itens em estoque:"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btCPU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPU - R$1000,00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btTeclado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teclado - R$100,00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btMonitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monitor - R$550,00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/btMouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mouse - R$30,00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/unCPU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 - Un de CPU disponíveis."
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unTeclado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 - Un de Teclado disponíveis."
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unMonitor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 - Un de Monitor disponíveis."
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unMouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 - Un de Mouse disponíveis."
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/txTotaldaVenda"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Total da venda:"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btVendaDinheiro"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Venda no Dinheiro" />
+
+        <Button
+            android:id="@+id/btVendaCartão"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Venda no Cartão" />
+
+        <Button
+            android:id="@+id/btVendaCheque"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Venda no Cheque" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
