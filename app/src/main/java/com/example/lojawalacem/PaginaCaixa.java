@@ -19,7 +19,8 @@ public class PaginaCaixa extends AppCompatActivity {
         Exibe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent PExibeVenda = new Intent(PaginaCaixa.this, ExibeVendas.class);
+                Intent PExibeVenda = new Intent(PaginaCaixa.this, ExibirVendas.class);
+                startActivity(PExibeVenda);
             }
         });
         Cadastra.setOnClickListener(new View.OnClickListener() {
