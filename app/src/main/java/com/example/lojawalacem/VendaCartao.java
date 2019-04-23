@@ -51,7 +51,7 @@ public class VendaCartao extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 alert("Compra realizada com sucesso!");
-                Intent FinalizaVC11 = new Intent( VendaCartao.this, MainActivity.class);
+                Intent FinalizaVC11 = new Intent( VendaCartao.this, PaginaCaixa.class);
                 startActivity(FinalizaVC11);
 
             }

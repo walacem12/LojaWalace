@@ -30,7 +30,7 @@ public class VendaCheque extends AppCompatActivity {
 
                 if(Identidade.equals("123")){
                     alert("Venda finalizada com sucesso!");
-                    Intent FinalizaVCh = new Intent( VendaCheque.this, MainActivity.class);
+                    Intent FinalizaVCh = new Intent( VendaCheque.this, PaginaCaixa.class);
                     startActivity(FinalizaVCh);
 
                 }else {

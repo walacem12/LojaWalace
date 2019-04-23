@@ -57,7 +57,7 @@ public class VendaDinheiro extends AppCompatActivity {
         finalizaDinheiro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Pprincipal = new Intent(VendaDinheiro.this, MainActivity.class);
+                Intent Pprincipal = new Intent(VendaDinheiro.this, PaginaCaixa.class);
                 startActivity(Pprincipal);
                 alert("Venda registrada com sucesso!");
             }

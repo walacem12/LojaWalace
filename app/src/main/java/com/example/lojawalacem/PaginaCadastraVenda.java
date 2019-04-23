@@ -16,7 +16,6 @@ public class PaginaCadastraVenda extends AppCompatActivity {
     public static ArrayList<String> Lista;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +32,7 @@ public class PaginaCadastraVenda extends AppCompatActivity {
         final TextView unMonitor = (TextView) findViewById(R.id.unMonitor);
         final TextView unMouse = (TextView) findViewById(R.id.unMouse);
         final TextView unTeclado = (TextView) findViewById(R.id.unTeclado);
+
 
 
         Button teclado = (Button) findViewById(R.id.btTeclado);
@@ -67,10 +67,13 @@ public class PaginaCadastraVenda extends AppCompatActivity {
         mouse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int mo=0;
+                mo++;
                 contMouse--;
                 unMouse.setText(contMouse+" - Un. de Mouse disponíveis.");
                 total+=30;
                 TotaldaVenda.setText("Total da venda: "+total);
+                PaginaCadastraVenda.Lista.add("Venda de "+mo+": Mouse");
             }
         });
 
@@ -78,10 +81,13 @@ public class PaginaCadastraVenda extends AppCompatActivity {
         cpu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int cp=0;
+                cp++;
                 contCPU--;
                 unCPU.setText(contCPU+" - Un. de CPU disponíveis.");
                 total+=1000;
                 TotaldaVenda.setText("Total da venda: "+total);
+                PaginaCadastraVenda.Lista.add("Venda de "+cp+": CPU");
             }
         });
 
