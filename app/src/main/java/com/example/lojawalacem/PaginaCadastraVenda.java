@@ -22,7 +22,7 @@ public class PaginaCadastraVenda extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagina_cadastra_venda);
         Lista=new ArrayList<>();
-        PaginaCadastraVenda.Lista.add("Walace");
+
 
 
 
@@ -33,16 +33,19 @@ public class PaginaCadastraVenda extends AppCompatActivity {
         final TextView unMonitor = (TextView) findViewById(R.id.unMonitor);
         final TextView unMouse = (TextView) findViewById(R.id.unMouse);
         final TextView unTeclado = (TextView) findViewById(R.id.unTeclado);
-
+        public int v=0;
 
         Button teclado = (Button) findViewById(R.id.btTeclado);
         teclado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int t=0;
+                t++;
                 contTeclado--;
                 unTeclado.setText(contTeclado+" - Un. de Teclado disponíveis.");
                 total+=100;
                 TotaldaVenda.setText("Total da venda: "+total);
+                PaginaCadastraVenda.Lista.add("Venda de "+t+": Teclado");
             }
         });
 
@@ -50,10 +53,13 @@ public class PaginaCadastraVenda extends AppCompatActivity {
         monitor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int m=0;
+                m++;
                 contMonitor--;
                 unMonitor.setText(contMonitor+" - Un. de Monitor disponíveis.");
                 total+=550;
                 TotaldaVenda.setText("Total da venda: "+total);
+                PaginaCadastraVenda.Lista.add("Venda de "+m+": Teclado");
             }
         });
 

@@ -14,7 +14,7 @@ public class PaginaCaixa extends AppCompatActivity {
         setContentView(R.layout.activity_pagina_caixa);
 
 
-        Button Cadastra = (Button) findViewById(R.id.exibeVenda);
+        Button Cadastra = (Button) findViewById(R.id.cadastraVenda);
         Button Exibe = (Button) findViewById(R.id.exibeVenda);
         Exibe.setOnClickListener(new View.OnClickListener() {
             @Override
