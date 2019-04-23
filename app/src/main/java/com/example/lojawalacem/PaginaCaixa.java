@@ -14,7 +14,14 @@ public class PaginaCaixa extends AppCompatActivity {
         setContentView(R.layout.activity_pagina_caixa);
 
 
-        Button Cadastra = (Button) findViewById(R.id.cadastraVenda);
+        Button Cadastra = (Button) findViewById(R.id.exibeVenda);
+        Button Exibe = (Button) findViewById(R.id.exibeVenda);
+        Exibe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent PExibeVenda = new Intent(PaginaCaixa.this, ExibeVendas.class);
+            }
+        });
         Cadastra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

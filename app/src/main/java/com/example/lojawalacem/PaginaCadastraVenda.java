@@ -7,15 +7,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class PaginaCadastraVenda extends AppCompatActivity {
 
     public static float total=0;
     public int contCPU=5, contMonitor=5, contMouse=5, contTeclado=5;
+    public static ArrayList<String> Lista;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagina_cadastra_venda);
+        Lista=new ArrayList<>();
+        PaginaCadastraVenda.Lista.add("Walace");
 
 
 

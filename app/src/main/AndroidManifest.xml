@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VendaCheque"></activity>
+        <activity android:name=".ExibirVendas"></activity>
+        <activity android:name=".VendaCheque" />
         <activity android:name=".VendaCartao" />
         <activity android:name=".VendaDinheiro" />
         <activity android:name=".PaginaCadastraVenda" />
