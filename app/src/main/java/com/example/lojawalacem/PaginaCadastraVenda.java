@@ -33,7 +33,7 @@ public class PaginaCadastraVenda extends AppCompatActivity {
         final TextView unMonitor = (TextView) findViewById(R.id.unMonitor);
         final TextView unMouse = (TextView) findViewById(R.id.unMouse);
         final TextView unTeclado = (TextView) findViewById(R.id.unTeclado);
-        public int v=0;
+
 
         Button teclado = (Button) findViewById(R.id.btTeclado);
         teclado.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +45,7 @@ public class PaginaCadastraVenda extends AppCompatActivity {
                 unTeclado.setText(contTeclado+" - Un. de Teclado disponíveis.");
                 total+=100;
                 TotaldaVenda.setText("Total da venda: "+total);
-                //PaginaCadastraVenda.Lista.add("Venda de "+t+": Teclado");
+                PaginaCadastraVenda.Lista.add("Venda de "+t+": Teclado");
             }
         });
 
@@ -59,7 +59,7 @@ public class PaginaCadastraVenda extends AppCompatActivity {
                 unMonitor.setText(contMonitor+" - Un. de Monitor disponíveis.");
                 total+=550;
                 TotaldaVenda.setText("Total da venda: "+total);
-                //PaginaCadastraVenda.Lista.add("Venda de "+m+": Monitor");
+                PaginaCadastraVenda.Lista.add("Venda de "+m+": Monitor");
             }
         });
 
