@@ -45,7 +45,7 @@ public class PaginaCadastraVenda extends AppCompatActivity {
                 unTeclado.setText(contTeclado+" - Un. de Teclado disponíveis.");
                 total+=100;
                 TotaldaVenda.setText("Total da venda: "+total);
-                PaginaCadastraVenda.Lista.add("Venda de "+t+": Teclado");
+                //PaginaCadastraVenda.Lista.add("Venda de "+t+": Teclado");
             }
         });
 
@@ -59,7 +59,7 @@ public class PaginaCadastraVenda extends AppCompatActivity {
                 unMonitor.setText(contMonitor+" - Un. de Monitor disponíveis.");
                 total+=550;
                 TotaldaVenda.setText("Total da venda: "+total);
-                PaginaCadastraVenda.Lista.add("Venda de "+m+": Teclado");
+                //PaginaCadastraVenda.Lista.add("Venda de "+m+": Monitor");
             }
         });
 
